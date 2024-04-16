@@ -9,7 +9,7 @@ app.use(express.json());
 const recipeRoutes = require("./routes/recipeRoutes");
 
 // Routes
-app.use("/recipes", recipeRoutes);
+app.use("/api/recipes", recipeRoutes);
 
 // 404 error handling middleware
 app.use((req, res, next) => {
